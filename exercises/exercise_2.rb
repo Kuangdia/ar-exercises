@@ -9,3 +9,11 @@ puts "----------"
 @store2 = Store.find(2)
 
 p @store1
+
+# change name of db
+@store1.name = "something"
+
+# saves the update
+@store1.save
+
+p @store1.name
